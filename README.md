@@ -1,3 +1,21 @@
+
+## Build docker image
+```
+    # Prepare for heroku container deployment
+    docker build -t face_recognition .
+```
+
+## Deploying to a docker machine
+
+```
+    docker login
+    # For plain HTTP
+    docker run -t -i -p80:5001 -ePORT=5001 face_recognition
+   
+```
+
+
+
 # Face Recognition
 
 Recognize and manipulate faces from Python or from the command line with
